@@ -19,7 +19,7 @@ importers:
       '@storybook/addon-viewport': ^6.4.22
       '@storybook/html': ^6.4.22
       '@swc/core': ^1.2.165
-      '@swc/helpers': ^0.4.0
+      '@swc/helpers': ^0.5.0
       '@swc/jest': ^0.2.20
       '@testing-library/jest-dom': ^5.16.4
       '@types/faker': ^5.5.8
@@ -77,7 +77,7 @@ importers:
       '@storybook/addon-viewport': 6.4.22
       '@storybook/html': 6.4.22_tgvqbxx3i4v5lht4r2tvmykgia
       '@swc/core': 1.2.165
-      '@swc/helpers': 0.4.3
+      '@swc/helpers': 0.5.1
       '@swc/jest': 0.2.20_@swc+core@1.2.165
       '@testing-library/jest-dom': 5.16.4
       '@types/faker': 5.5.9
@@ -7453,8 +7453,8 @@ packages:
       '@swc/core-win32-x64-msvc': 1.2.165
     dev: true
 
-  /@swc/helpers/0.4.3:
-    resolution: {integrity: sha512-6JrF+fdUK2zbGpJIlN7G3v966PQjyx/dPt1T9km2wj+EUBqgrxCk3uX4Kct16MIm9gGxfKRcfax2hVf5jvlTzA==}
+  /@swc/helpers/0.5.1:
+    resolution: {integrity: sha512-sJ902EfIzn1Fa+qYmjdQqh8tPsoxyBz+8yBKC2HKUxyezKJFwPGOn7pv4WY6QuQW//ySQi5lJjA/ZT9sNWWNTg==}
     dependencies:
       tslib: 2.4.0
     dev: true
@@ -9571,7 +9571,7 @@ packages:
       mississippi: 3.0.0
       mkdirp: 0.5.6
       move-concurrently: 1.0.1
-      promise-inflight: 1.0.1
+      promise-inflight: 1.0.1_bluebird@3.7.2
       rimraf: 2.7.1
       ssri: 6.0.2
       unique-filename: 1.1.1
@@ -12828,7 +12828,7 @@ packages:
     resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==}
     engines: {node: '>= 4.0'}
     os: [darwin]
-    deprecated: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+    deprecated: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
     requiresBuild: true
     dependencies:
       bindings: 1.5.0
@@ -17992,6 +17992,17 @@ packages:
     peerDependenciesMeta:
       bluebird:
         optional: true
+    dev: true
+
+  /promise-inflight/1.0.1_bluebird@3.7.2:
+    resolution: {integrity: sha1-mEcocL8igTL8vdhoEputEsPAKeM=}
+    peerDependencies:
+      bluebird: '*'
+    peerDependenciesMeta:
+      bluebird:
+        optional: true
+    dependencies:
+      bluebird: 3.7.2
     dev: true
 
   /promise.allsettled/1.0.5:
